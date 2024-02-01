@@ -10,7 +10,7 @@ import { CurrencyPipe } from '@angular/common';
 })
 export class ViewingComponent implements OnInit {
   appService = inject(AppService);
-  displayBid = '0';
+  displayBid = '';
   hasPoint = false;
   currentBid: string[] = this.appService
     .currentBidSignal()
