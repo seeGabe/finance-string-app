@@ -15,6 +15,6 @@ describe('AppService', () => {
   });
 
   it('should have signal', () => {
-    expect(service.currentBidSignal).toBeUndefined();
+    expect(service.currentBidSignal).toBeDefined();
   });
 });
