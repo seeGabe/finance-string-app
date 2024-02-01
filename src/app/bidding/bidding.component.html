@@ -1,1 +1,13 @@
-<p>bidding works!</p>
+<h1>Place Bid</h1>
+<div>
+  <input
+    type="text"
+    id="bidControl"
+    [formControl]="bidControl"
+    placeholder="Make an offer"
+  />
+</div>
+<div>
+  <button type="button" (click)="onSubmit()">Send Bid</button>
+</div>
+<p *ngIf="hasError">Invalid Bid</p>
